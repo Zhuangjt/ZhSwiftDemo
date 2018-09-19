@@ -18,11 +18,11 @@ class MyTabBarController: UITabBarController {
     }
     
     private func addChildViewControllers() {
-        setChildViewController(RecommendViewController(), "推荐", "dy_tab_recommend")
-        setChildViewController(EnterTainmentViewController(), "娱乐", "dy_tab_entertainment")
-        setChildViewController(FocusViewController(), "关注", "dy_tab_focus")
-        setChildViewController(FishBarViewController(), "鱼吧", "dy_tab_fishbar")
-        setChildViewController(DiscoveryViewController(), "发现", "dy_tab_discovery")
+        setChildViewController(DYHomeViewController(), "推荐", "dy_tab_recommend")
+        setChildViewController(DYEnterTainmentViewController(), "娱乐", "dy_tab_entertainment")
+        setChildViewController(DYFocusViewController(), "关注", "dy_tab_focus")
+        setChildViewController(DYFishBarViewController(), "鱼吧", "dy_tab_fishbar")
+        setChildViewController(DYDiscoveryViewController(), "发现", "dy_tab_discovery")
 //        setChildViewController(HomeViewController(), "首页", "tab_home")
 //        setChildViewController(VideoViewController(), "西瓜视频", "tab_video")
 //        setChildViewController(RedPackageViewController(), "", "tab_redpackage")

@@ -23,10 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         //navbar
-        UINavigationBar.appearance().tintColor = KCOLOR_BAR_TEXT
-        UINavigationBar.appearance().barTintColor = UIColor.orange
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().barTintColor = KCOLOR_BAR_TINT
         UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.black,NSAttributedStringKey.font:KFontSize(FONT_SAMLL)]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white,NSAttributedStringKey.font:KFontSize(FONT_SAMLL)]
 
         //tabbar
         UITabBar.appearance().tintColor = KCOLOR_TAB_TEXT

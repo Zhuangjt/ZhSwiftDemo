@@ -22,15 +22,16 @@ class BaseTableViewController: BaseViewController {
     var offset: CGFloat?
     
     
-    override var viewModel: BaseTableViewModel{
-        return BaseTableViewModel()
-    }
+//    override var viewModel: BaseTableViewModel{
+//        return BaseTableViewModel()
+//    }
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
 
     override func setupSubViews() {
@@ -51,46 +52,48 @@ class BaseTableViewController: BaseViewController {
         self.tableView = tableView
         
         tableView.snp.makeConstraints { (make) in
-            make.top.left.bottom.right.equalToSuperview()
+            make.edges.equalTo(0)
         }
     }
     
-    override func bindViewModel() {
-        
-    }
+//    override func bindViewModel() {
+//
+//    }
 
-    //刷新数据
-    func reloadTableViewData() {
-        
-    }
-    
-    //下拉刷新
-    func pullDownToRefresh() {
-        
-    }
-    
-    //上拉刷新
-    func pullUpToRefresh() {
-        
-    }
+//    //刷新数据
+//    func reloadTableViewData() {
+//
+//    }
+//
+//    //下拉刷新
+//    func pullDownToRefresh() {
+//
+//    }
+//
+//    //上拉刷新
+//    func pullUpToRefresh() {
+//
+//    }
 }
 
 extension BaseTableViewController: UITableViewDataSource,UITableViewDelegate{
     
     //sections
     func numberOfSections(in tableView: UITableView) -> Int {
-        if viewModel.shouldMultiSections {
-            return viewModel.dataSource.isEmpty ? 1 : viewModel.dataSource.count
-        }
         return 1
+//        if viewModel.shouldMultiSections {
+//            return viewModel.dataSource.isEmpty ? 1 : viewModel.dataSource.count
+//        }
+//        return 1
     }
     
     //row
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if viewModel.shouldMultiSections {
-            return viewModel.dataSource[section].count
-        }
-        return viewModel.dataSource.count
+        return 0
+//        if viewModel.shouldMultiSections {
+//            return viewModel.dataSource[section].count
+//        }
+//        return viewModel.dataSource.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -99,23 +102,25 @@ extension BaseTableViewController: UITableViewDataSource,UITableViewDelegate{
     
     //cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableViewDuqueueReusableCell(tableView: tableView, identifier: "UITableViewCell", indexPath: indexPath)
-        var object: AnyObject?
-        if viewModel.shouldMultiSections {
-            object = viewModel.dataSource[indexPath.section][indexPath.row]
-        }else{
-            object = viewModel.dataSource[indexPath.row]
-         }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
         return cell
+//        let cell = tableViewDuqueueReusableCell(tableView: tableView, identifier: "UITableViewCell", indexPath: indexPath)
+//        var object: AnyObject?
+//        if viewModel.shouldMultiSections {
+//            object = viewModel.dataSource[indexPath.section][indexPath.row]
+//        }else{
+//            object = viewModel.dataSource[indexPath.row]
+//         }
+//        return cell
     }
     
     //config
-    func configureCell(cell: UITableViewCell, indexPath: IndexPath, object: AnyObject) {
-    }
-    
-    //duqueueReusavleCell
-    func tableViewDuqueueReusableCell(tableView: UITableView, identifier: String, indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
-    }
+//    func configureCell(cell: UITableViewCell, indexPath: IndexPath, object: AnyObject) {
+//    }
+//
+//    //duqueueReusavleCell
+//    func tableViewDuqueueReusableCell(tableView: UITableView, identifier: String, indexPath: IndexPath) -> UITableViewCell {
+//        return tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+//    }
 }
 

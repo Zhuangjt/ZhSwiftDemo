@@ -12,11 +12,19 @@ class BaseTableViewCell: UITableViewCell {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.selectionStyle = .none
+        self.accessoryType = .none
+        self.contentView.backgroundColor = UIColor.white
+        
         setUpUI()
     }
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.selectionStyle = .none
+        self.accessoryType = .none
+        self.contentView.backgroundColor = UIColor.white
+        
         setUpUI()
     }
 
@@ -44,6 +52,6 @@ class BaseTableViewCell: UITableViewCell {
     }
     
     class func getTableViewCellHeightWithModel<T>(entity: T) -> CGFloat{
-        return 0
+        return UITableViewAutomaticDimension  //自适应单元格高度
     }
 }

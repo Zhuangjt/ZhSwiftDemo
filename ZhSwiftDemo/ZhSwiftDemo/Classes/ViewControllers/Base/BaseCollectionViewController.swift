@@ -29,9 +29,9 @@ class BaseCollectionViewController: BaseViewController {
     /// 空数据偏移量
     var offset: CGFloat?
     
-    override var viewModel: BaseCollectionViewModel{
-        return BaseCollectionViewModel()
-    }
+//    override var viewModel: BaseCollectionViewModel{
+//        return BaseCollectionViewModel()
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,37 +64,41 @@ class BaseCollectionViewController: BaseViewController {
 
 extension BaseCollectionViewController:UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        if viewModel.shouldMultiSecionts {
-            return viewModel.dataScorce.isEmpty ? 1 : viewModel.dataScorce.count
-        }
         return 1
+//        if viewModel.shouldMultiSecionts {
+//            return viewModel.dataScorce.isEmpty ? 1 : viewModel.dataScorce.count
+//        }
+//        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if viewModel.shouldMultiSecionts {
-            return viewModel.dataScorce[section].count
-        }
-        return viewModel.dataScorce.count
+        return 0
+//        if viewModel.shouldMultiSecionts {
+//            return viewModel.dataScorce[section].count
+//        }
+//        return viewModel.dataScorce.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionViewDuqueueReusableCell(collectionView: collectionView, identifier: "UICollectionViewCell", indexPath: indexPath)
-        var object: AnyObject?
-        if viewModel.shouldMultiSecionts {
-            object = viewModel.dataScorce[indexPath.section][indexPath.row]
-        }else{
-            object = viewModel.dataScorce[indexPath.row]
-        }
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UICollectionViewCell", for: indexPath)
         return cell
+//        let cell = collectionViewDuqueueReusableCell(collectionView: collectionView, identifier: "UICollectionViewCell", indexPath: indexPath)
+//        var object: AnyObject?
+//        if viewModel.shouldMultiSecionts {
+//            object = viewModel.dataScorce[indexPath.section][indexPath.row]
+//        }else{
+//            object = viewModel.dataScorce[indexPath.row]
+//        }
+//        return cell
     }
     
     //config
-    func configureCell(cell: UITableViewCell, indexPath: IndexPath, object: AnyObject) {
-    }
-    
-    func collectionViewDuqueueReusableCell(collectionView: UICollectionView, identifier: String, indexPath: IndexPath) -> UICollectionViewCell {
-        return collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
-    }
+//    func configureCell(cell: UITableViewCell, indexPath: IndexPath, object: AnyObject) {
+//    }
+//
+//    func collectionViewDuqueueReusableCell(collectionView: UICollectionView, identifier: String, indexPath: IndexPath) -> UICollectionViewCell {
+//        return collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
+//    }
     
     
 }

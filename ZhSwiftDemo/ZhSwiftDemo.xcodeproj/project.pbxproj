@@ -8,15 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		082D26822C451B61BB9F8E28 /* Pods_ZhSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAB33C52D216AB7531AF0F6 /* Pods_ZhSwiftDemo.framework */; };
+		1253294B21491BD200C4431F /* DYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253294A21491BD200C4431F /* DYHomeViewController.swift */; };
+		1253294D21491C5A00C4431F /* DYEnterTainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253294C21491C5A00C4431F /* DYEnterTainmentViewController.swift */; };
+		1253294F21491C6F00C4431F /* DYFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253294E21491C6F00C4431F /* DYFocusViewController.swift */; };
+		1253295121491C8400C4431F /* DYFishBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253295021491C8400C4431F /* DYFishBarViewController.swift */; };
+		1253295321491C9800C4431F /* DYDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253295221491C9800C4431F /* DYDiscoveryViewController.swift */; };
+		125CD4DC2151F7BC00331A6A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CD4DB2151F7BC00331A6A /* BaseView.swift */; };
+		125CD4DE2151F89500331A6A /* NaviSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CD4DD2151F89500331A6A /* NaviSearchView.swift */; };
+		125CD4E02152385600331A6A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CD4DF2152385600331A6A /* UIView+Extension.swift */; };
+		125CD4E22152516E00331A6A /* DYClassifyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CD4E12152516E00331A6A /* DYClassifyCell.swift */; };
+		125CD4E42152567500331A6A /* DYClassifyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CD4E32152567500331A6A /* DYClassifyHeaderView.swift */; };
+		125F29382150A1F100AC6EA2 /* DYClassifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125F29372150A1F100AC6EA2 /* DYClassifyViewController.swift */; };
+		125F293A2150A22100AC6EA2 /* DYRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125F29392150A22100AC6EA2 /* DYRecommendViewController.swift */; };
+		125F293C2150A25C00AC6EA2 /* DYAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125F293B2150A25C00AC6EA2 /* DYAllViewController.swift */; };
+		125F293E2150A27000AC6EA2 /* DYLOLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125F293D2150A27000AC6EA2 /* DYLOLViewController.swift */; };
+		125F29402150A2D200AC6EA2 /* DYJDQSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125F293F2150A2D200AC6EA2 /* DYJDQSViewController.swift */; };
+		125F29422150A2DF00AC6EA2 /* DYWZRYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125F29412150A2DF00AC6EA2 /* DYWZRYViewController.swift */; };
+		125F29442150A2EB00AC6EA2 /* DYQQCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125F29432150A2EB00AC6EA2 /* DYQQCarViewController.swift */; };
+		125F29592150A9BB00AC6EA2 /* TYPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 125F29482150A9BB00AC6EA2 /* TYPagerController.m */; };
+		125F295A2150A9BB00AC6EA2 /* TYPagerViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 125F29492150A9BB00AC6EA2 /* TYPagerViewLayout.m */; };
+		125F295B2150A9BB00AC6EA2 /* TYTabPagerBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 125F294B2150A9BB00AC6EA2 /* TYTabPagerBar.m */; };
+		125F295C2150A9BB00AC6EA2 /* TYTabPagerBarLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 125F294C2150A9BB00AC6EA2 /* TYTabPagerBarLayout.m */; };
+		125F295D2150A9BB00AC6EA2 /* TYTabPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 125F294F2150A9BB00AC6EA2 /* TYTabPagerView.m */; };
+		125F295E2150A9BB00AC6EA2 /* TYTabPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 125F29522150A9BB00AC6EA2 /* TYTabPagerController.m */; };
+		125F295F2150A9BB00AC6EA2 /* TYTabPagerBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 125F29532150A9BB00AC6EA2 /* TYTabPagerBarCell.m */; };
+		125F29602150A9BB00AC6EA2 /* TYPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 125F29552150A9BB00AC6EA2 /* TYPagerView.m */; };
+		125F29622150E15C00AC6EA2 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125F29612150E15C00AC6EA2 /* UIImage+Extension.swift */; };
+		12B73A7F21510EBC009896A4 /* DYApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B73A7E21510EBC009896A4 /* DYApi.swift */; };
 		12BDC200214661D800DE2213 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDC1FF214661D800DE2213 /* BaseCollectionViewController.swift */; };
 		12BDC202214662FB00DE2213 /* BaseCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDC201214662FB00DE2213 /* BaseCollectionViewModel.swift */; };
-		12BDC20421467EE700DE2213 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDC20321467EE700DE2213 /* RecommendViewController.swift */; };
 		12BDC20821467FA900DE2213 /* NEWSREADME in Resources */ = {isa = PBXBuildFile; fileRef = 12BDC20721467FA900DE2213 /* NEWSREADME */; };
-		12BDC20C214680F900DE2213 /* EnterTainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDC20B214680F900DE2213 /* EnterTainmentViewController.swift */; };
-		12BDC20F2146814F00DE2213 /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDC20E2146814F00DE2213 /* FocusViewController.swift */; };
-		12BDC2122146819E00DE2213 /* FishBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDC2112146819E00DE2213 /* FishBarViewController.swift */; };
 		12BDC2182146868E00DE2213 /* DYREADME in Resources */ = {isa = PBXBuildFile; fileRef = 12BDC2172146868E00DE2213 /* DYREADME */; };
-		12BDC21A214687F400DE2213 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDC219214687F400DE2213 /* DiscoveryViewController.swift */; };
 		751F8F13212D135A00DD5C64 /* ZhNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751F8F12212D135A00DD5C64 /* ZhNetWork.swift */; };
 		7526C2B3211077B10009058D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526C2B2211077B10009058D /* BaseViewController.swift */; };
 		752BF2082112A0B1005B03A6 /* UIColor+WUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752BF2072112A0B1005B03A6 /* UIColor+WUIKit.swift */; };
@@ -63,15 +85,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1253294A21491BD200C4431F /* DYHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYHomeViewController.swift; sourceTree = "<group>"; };
+		1253294C21491C5A00C4431F /* DYEnterTainmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYEnterTainmentViewController.swift; sourceTree = "<group>"; };
+		1253294E21491C6F00C4431F /* DYFocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYFocusViewController.swift; sourceTree = "<group>"; };
+		1253295021491C8400C4431F /* DYFishBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYFishBarViewController.swift; sourceTree = "<group>"; };
+		1253295221491C9800C4431F /* DYDiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYDiscoveryViewController.swift; sourceTree = "<group>"; };
+		125CD4DB2151F7BC00331A6A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		125CD4DD2151F89500331A6A /* NaviSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviSearchView.swift; sourceTree = "<group>"; };
+		125CD4DF2152385600331A6A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		125CD4E12152516E00331A6A /* DYClassifyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYClassifyCell.swift; sourceTree = "<group>"; };
+		125CD4E32152567500331A6A /* DYClassifyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYClassifyHeaderView.swift; sourceTree = "<group>"; };
+		125F29372150A1F100AC6EA2 /* DYClassifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYClassifyViewController.swift; sourceTree = "<group>"; };
+		125F29392150A22100AC6EA2 /* DYRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYRecommendViewController.swift; sourceTree = "<group>"; };
+		125F293B2150A25C00AC6EA2 /* DYAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYAllViewController.swift; sourceTree = "<group>"; };
+		125F293D2150A27000AC6EA2 /* DYLOLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYLOLViewController.swift; sourceTree = "<group>"; };
+		125F293F2150A2D200AC6EA2 /* DYJDQSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYJDQSViewController.swift; sourceTree = "<group>"; };
+		125F29412150A2DF00AC6EA2 /* DYWZRYViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYWZRYViewController.swift; sourceTree = "<group>"; };
+		125F29432150A2EB00AC6EA2 /* DYQQCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYQQCarViewController.swift; sourceTree = "<group>"; };
+		125F29482150A9BB00AC6EA2 /* TYPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYPagerController.m; sourceTree = "<group>"; };
+		125F29492150A9BB00AC6EA2 /* TYPagerViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYPagerViewLayout.m; sourceTree = "<group>"; };
+		125F294B2150A9BB00AC6EA2 /* TYTabPagerBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTabPagerBar.m; sourceTree = "<group>"; };
+		125F294C2150A9BB00AC6EA2 /* TYTabPagerBarLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTabPagerBarLayout.m; sourceTree = "<group>"; };
+		125F294D2150A9BB00AC6EA2 /* TYTabPagerBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTabPagerBarCell.h; sourceTree = "<group>"; };
+		125F294E2150A9BB00AC6EA2 /* TYTabPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTabPagerController.h; sourceTree = "<group>"; };
+		125F294F2150A9BB00AC6EA2 /* TYTabPagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTabPagerView.m; sourceTree = "<group>"; };
+		125F29502150A9BB00AC6EA2 /* TYTabPagerBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTabPagerBar.h; sourceTree = "<group>"; };
+		125F29512150A9BB00AC6EA2 /* TYTabPagerBarLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTabPagerBarLayout.h; sourceTree = "<group>"; };
+		125F29522150A9BB00AC6EA2 /* TYTabPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTabPagerController.m; sourceTree = "<group>"; };
+		125F29532150A9BB00AC6EA2 /* TYTabPagerBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTabPagerBarCell.m; sourceTree = "<group>"; };
+		125F29542150A9BB00AC6EA2 /* TYTabPagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTabPagerView.h; sourceTree = "<group>"; };
+		125F29552150A9BB00AC6EA2 /* TYPagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYPagerView.m; sourceTree = "<group>"; };
+		125F29562150A9BB00AC6EA2 /* TYPagerViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYPagerViewLayout.h; sourceTree = "<group>"; };
+		125F29572150A9BB00AC6EA2 /* TYPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYPagerController.h; sourceTree = "<group>"; };
+		125F29582150A9BB00AC6EA2 /* TYPagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYPagerView.h; sourceTree = "<group>"; };
+		125F29612150E15C00AC6EA2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		12B73A7E21510EBC009896A4 /* DYApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYApi.swift; sourceTree = "<group>"; };
 		12BDC1FF214661D800DE2213 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
 		12BDC201214662FB00DE2213 /* BaseCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewModel.swift; sourceTree = "<group>"; };
-		12BDC20321467EE700DE2213 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		12BDC20721467FA900DE2213 /* NEWSREADME */ = {isa = PBXFileReference; lastKnownFileType = text; path = NEWSREADME; sourceTree = "<group>"; };
-		12BDC20B214680F900DE2213 /* EnterTainmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterTainmentViewController.swift; sourceTree = "<group>"; };
-		12BDC20E2146814F00DE2213 /* FocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
-		12BDC2112146819E00DE2213 /* FishBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishBarViewController.swift; sourceTree = "<group>"; };
 		12BDC2172146868E00DE2213 /* DYREADME */ = {isa = PBXFileReference; lastKnownFileType = text; path = DYREADME; sourceTree = "<group>"; };
-		12BDC219214687F400DE2213 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
 		46CE5F082D0450C75721CD26 /* Pods-ZhSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhSwiftDemo/Pods-ZhSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		66B62B11AACB38919FB41426 /* Pods-ZhSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhSwiftDemo/Pods-ZhSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		751F8F12212D135A00DD5C64 /* ZhNetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhNetWork.swift; sourceTree = "<group>"; };
@@ -136,6 +188,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		125F29322150A05B00AC6EA2 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				125F29472150A9BB00AC6EA2 /* TYPagerController */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		125F29472150A9BB00AC6EA2 /* TYPagerController */ = {
+			isa = PBXGroup;
+			children = (
+				125F29482150A9BB00AC6EA2 /* TYPagerController.m */,
+				125F29492150A9BB00AC6EA2 /* TYPagerViewLayout.m */,
+				125F294A2150A9BB00AC6EA2 /* TabPager */,
+				125F29552150A9BB00AC6EA2 /* TYPagerView.m */,
+				125F29562150A9BB00AC6EA2 /* TYPagerViewLayout.h */,
+				125F29572150A9BB00AC6EA2 /* TYPagerController.h */,
+				125F29582150A9BB00AC6EA2 /* TYPagerView.h */,
+			);
+			path = TYPagerController;
+			sourceTree = "<group>";
+		};
+		125F294A2150A9BB00AC6EA2 /* TabPager */ = {
+			isa = PBXGroup;
+			children = (
+				125F294B2150A9BB00AC6EA2 /* TYTabPagerBar.m */,
+				125F294C2150A9BB00AC6EA2 /* TYTabPagerBarLayout.m */,
+				125F294D2150A9BB00AC6EA2 /* TYTabPagerBarCell.h */,
+				125F294E2150A9BB00AC6EA2 /* TYTabPagerController.h */,
+				125F294F2150A9BB00AC6EA2 /* TYTabPagerView.m */,
+				125F29502150A9BB00AC6EA2 /* TYTabPagerBar.h */,
+				125F29512150A9BB00AC6EA2 /* TYTabPagerBarLayout.h */,
+				125F29522150A9BB00AC6EA2 /* TYTabPagerController.m */,
+				125F29532150A9BB00AC6EA2 /* TYTabPagerBarCell.m */,
+				125F29542150A9BB00AC6EA2 /* TYTabPagerView.h */,
+			);
+			path = TabPager;
+			sourceTree = "<group>";
+		};
 		12BDC20521467F5600DE2213 /* News */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +243,14 @@
 		12BDC20621467F6C00DE2213 /* Recommend */ = {
 			isa = PBXGroup;
 			children = (
-				12BDC20321467EE700DE2213 /* RecommendViewController.swift */,
+				1253294A21491BD200C4431F /* DYHomeViewController.swift */,
+				125F29372150A1F100AC6EA2 /* DYClassifyViewController.swift */,
+				125F29392150A22100AC6EA2 /* DYRecommendViewController.swift */,
+				125F293B2150A25C00AC6EA2 /* DYAllViewController.swift */,
+				125F293D2150A27000AC6EA2 /* DYLOLViewController.swift */,
+				125F293F2150A2D200AC6EA2 /* DYJDQSViewController.swift */,
+				125F29412150A2DF00AC6EA2 /* DYWZRYViewController.swift */,
+				125F29432150A2EB00AC6EA2 /* DYQQCarViewController.swift */,
 			);
 			path = Recommend;
 			sourceTree = "<group>";
@@ -173,7 +271,7 @@
 		12BDC20A214680DF00DE2213 /* EnterTainment */ = {
 			isa = PBXGroup;
 			children = (
-				12BDC20B214680F900DE2213 /* EnterTainmentViewController.swift */,
+				1253294C21491C5A00C4431F /* DYEnterTainmentViewController.swift */,
 			);
 			path = EnterTainment;
 			sourceTree = "<group>";
@@ -181,7 +279,7 @@
 		12BDC20D2146813D00DE2213 /* Focus */ = {
 			isa = PBXGroup;
 			children = (
-				12BDC20E2146814F00DE2213 /* FocusViewController.swift */,
+				1253294E21491C6F00C4431F /* DYFocusViewController.swift */,
 			);
 			path = Focus;
 			sourceTree = "<group>";
@@ -189,7 +287,7 @@
 		12BDC2102146817500DE2213 /* FishBar */ = {
 			isa = PBXGroup;
 			children = (
-				12BDC2112146819E00DE2213 /* FishBarViewController.swift */,
+				1253295021491C8400C4431F /* DYFishBarViewController.swift */,
 			);
 			path = FishBar;
 			sourceTree = "<group>";
@@ -197,7 +295,7 @@
 		12BDC213214681B000DE2213 /* Find */ = {
 			isa = PBXGroup;
 			children = (
-				12BDC219214687F400DE2213 /* DiscoveryViewController.swift */,
+				1253295221491C9800C4431F /* DYDiscoveryViewController.swift */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -214,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				751F8F12212D135A00DD5C64 /* ZhNetWork.swift */,
+				12B73A7E21510EBC009896A4 /* DYApi.swift */,
 			);
 			path = ApiService;
 			sourceTree = "<group>";
@@ -221,6 +320,7 @@
 		7526C2B0211076740009058D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				125F29322150A05B00AC6EA2 /* Vendor */,
 				751F8F11212D12AA00DD5C64 /* ApiService */,
 				7526C2B521107DDB0009058D /* Extension */,
 				75BBC734212A6BD0004DD642 /* Views */,
@@ -243,6 +343,7 @@
 				7584BCE9211C25880058417B /* BaseViewModel.swift */,
 				7584BCEB211C343E0058417B /* BaseTableViewModel.swift */,
 				12BDC201214662FB00DE2213 /* BaseCollectionViewModel.swift */,
+				125CD4DB2151F7BC00331A6A /* BaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -263,6 +364,8 @@
 				752BF2072112A0B1005B03A6 /* UIColor+WUIKit.swift */,
 				7584BCED211C40F80058417B /* UIButton+Extension.swift */,
 				7571CB7A211D3FD6005C5805 /* UIScrollView+Extension.swift */,
+				125F29612150E15C00AC6EA2 /* UIImage+Extension.swift */,
+				125CD4DF2152385600331A6A /* UIView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -384,6 +487,7 @@
 		75BBC734212A6BD0004DD642 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				125CD4DD2151F89500331A6A /* NaviSearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -391,6 +495,8 @@
 		75BBC735212A6BDD004DD642 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				125CD4E12152516E00331A6A /* DYClassifyCell.swift */,
+				125CD4E32152567500331A6A /* DYClassifyHeaderView.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -622,34 +728,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1253294B21491BD200C4431F /* DYHomeViewController.swift in Sources */,
 				75355EA921103AAC008DEFA9 /* ViewController.swift in Sources */,
+				125F29592150A9BB00AC6EA2 /* TYPagerController.m in Sources */,
+				125F293C2150A25C00AC6EA2 /* DYAllViewController.swift in Sources */,
+				125F29442150A2EB00AC6EA2 /* DYQQCarViewController.swift in Sources */,
 				12BDC202214662FB00DE2213 /* BaseCollectionViewModel.swift in Sources */,
+				125F295F2150A9BB00AC6EA2 /* TYTabPagerBarCell.m in Sources */,
 				752BF2162112B50A005B03A6 /* WeitoutiaoViewController.swift in Sources */,
-				12BDC21A214687F400DE2213 /* DiscoveryViewController.swift in Sources */,
 				7584BCEC211C343E0058417B /* BaseTableViewModel.swift in Sources */,
 				75452343212574530027FBB5 /* BaseTableViewCell.swift in Sources */,
+				125CD4E42152567500331A6A /* DYClassifyHeaderView.swift in Sources */,
+				125F295A2150A9BB00AC6EA2 /* TYPagerViewLayout.m in Sources */,
 				7584BCEE211C40F80058417B /* UIButton+Extension.swift in Sources */,
-				12BDC2122146819E00DE2213 /* FishBarViewController.swift in Sources */,
 				751F8F13212D135A00DD5C64 /* ZhNetWork.swift in Sources */,
+				1253294D21491C5A00C4431F /* DYEnterTainmentViewController.swift in Sources */,
 				7545234521257C580027FBB5 /* BaseCollectionViewCell.swift in Sources */,
+				12B73A7F21510EBC009896A4 /* DYApi.swift in Sources */,
+				125CD4E22152516E00331A6A /* DYClassifyCell.swift in Sources */,
 				75355EA721103AAC008DEFA9 /* AppDelegate.swift in Sources */,
+				125F295E2150A9BB00AC6EA2 /* TYTabPagerController.m in Sources */,
+				125CD4E02152385600331A6A /* UIView+Extension.swift in Sources */,
 				752BF2192112B540005B03A6 /* HuoshanViewController.swift in Sources */,
+				125CD4DC2151F7BC00331A6A /* BaseView.swift in Sources */,
+				125F295B2150A9BB00AC6EA2 /* TYTabPagerBar.m in Sources */,
+				125F295D2150A9BB00AC6EA2 /* TYTabPagerView.m in Sources */,
 				752BF2132112B4CE005B03A6 /* RedPackageViewController.swift in Sources */,
 				752BF20A2112AB18005B03A6 /* MyNavigationController.swift in Sources */,
 				752F1E752111B89C002CA066 /* BaseTableViewController.swift in Sources */,
 				752BF20D2112B3BF005B03A6 /* HomeViewController.swift in Sources */,
 				752BF2102112B3F1005B03A6 /* VideoViewController.swift in Sources */,
-				12BDC20F2146814F00DE2213 /* FocusViewController.swift in Sources */,
+				125F295C2150A9BB00AC6EA2 /* TYTabPagerBarLayout.m in Sources */,
+				1253295121491C8400C4431F /* DYFishBarViewController.swift in Sources */,
+				125F29422150A2DF00AC6EA2 /* DYWZRYViewController.swift in Sources */,
 				752BF2082112A0B1005B03A6 /* UIColor+WUIKit.swift in Sources */,
 				7571CB7B211D3FD6005C5805 /* UIScrollView+Extension.swift in Sources */,
-				12BDC20421467EE700DE2213 /* RecommendViewController.swift in Sources */,
+				125F293A2150A22100AC6EA2 /* DYRecommendViewController.swift in Sources */,
+				125F29622150E15C00AC6EA2 /* UIImage+Extension.swift in Sources */,
+				1253295321491C9800C4431F /* DYDiscoveryViewController.swift in Sources */,
+				125F293E2150A27000AC6EA2 /* DYLOLViewController.swift in Sources */,
 				7584BCEA211C25880058417B /* BaseViewModel.swift in Sources */,
-				12BDC20C214680F900DE2213 /* EnterTainmentViewController.swift in Sources */,
 				7526C2B3211077B10009058D /* BaseViewController.swift in Sources */,
 				75452341212567370027FBB5 /* Libs.swift in Sources */,
 				12BDC200214661D800DE2213 /* BaseCollectionViewController.swift in Sources */,
+				125CD4DE2151F89500331A6A /* NaviSearchView.swift in Sources */,
 				752F1E6F21118A8C002CA066 /* MyTabBarController.swift in Sources */,
 				752F1E7321119057002CA066 /* Const.swift in Sources */,
+				125F29602150A9BB00AC6EA2 /* TYPagerView.m in Sources */,
+				125F29402150A2D200AC6EA2 /* DYJDQSViewController.swift in Sources */,
+				1253294F21491C6F00C4431F /* DYFocusViewController.swift in Sources */,
+				125F29382150A1F100AC6EA2 /* DYClassifyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

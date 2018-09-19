@@ -1,14 +1,14 @@
 //
-//  EnterTainmentViewController.swift
+//  DYRecommendViewController.swift
 //  ZhSwiftDemo
 //
-//  Created by Zhuang on 2018/9/10.
+//  Created by Zhuang on 2018/9/18.
 //  Copyright © 2018年 Zhuang. All rights reserved.
 //
 
 import UIKit
 
-class EnterTainmentViewController: BaseViewController {
+class DYRecommendViewController: BaseCollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

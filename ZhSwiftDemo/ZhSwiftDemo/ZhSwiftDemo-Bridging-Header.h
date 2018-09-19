@@ -3,3 +3,5 @@
 //
 
 #import "SVProgressHUD.h"
+#import "TYTabPagerView.h"
+#import "TYTabPagerController.h"

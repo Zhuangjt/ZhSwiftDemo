@@ -158,19 +158,23 @@ func KHexColor(_ HexString: String) ->UIColor {
     return UIColor.colorWith(hexString: HexString)
 }
 
-let KCOLOR_BAR_TEXT  = KHexColor("925657")  //nav字体颜色
-let KCOLOR_TAB_TEXT  = KHexColor("f55a5d")  //tab字体颜色
+let KCOLOR_BAR_TINT = KHexColor("E1834C")   //nav背景色
+let KCOLOR_BAR_TEXT = KHexColor("925657")   //nav字体颜色
+let KCOLOR_TAB_TEXT = KHexColor("f55a5d")   //tab字体颜色
+let KCOLOR_TEXT_GRAY1 = KHexColor("DCD7D4") //浅灰字体
+let KCOLOR_TEXT_WHITE = UIColor.white       //白色字体
+let KCOLOR_TEXT_BLACK1 = KHexColor("262626") //黑色字体
 
 
 //字体 字号
 func KFontSize(_ a: CGFloat) -> UIFont {
-    return UIFont.systemFont(ofSize: a)
+    return UIFont.systemFont(ofSize: KAutoLayoutWidth(a))
 }
 func KFontBoldSize(_ a: CGFloat) -> UIFont {
-    return UIFont.boldSystemFont(ofSize: a)
+    return UIFont.boldSystemFont(ofSize: KAutoLayoutWidth(a))
 }
 func KFontWeigtSize(_ a: CGFloat, _ b: UIFont.Weight) -> UIFont{
-    return UIFont.systemFont(ofSize: a, weight: b)
+    return UIFont.systemFont(ofSize: KAutoLayoutWidth(a), weight: b)
 }
 
 //图片

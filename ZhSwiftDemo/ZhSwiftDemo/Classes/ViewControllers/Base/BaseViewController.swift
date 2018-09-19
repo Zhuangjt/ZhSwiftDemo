@@ -15,26 +15,29 @@ enum NavigationBar {
 
 class BaseViewController: UIViewController {
     
-    var viewModel: BaseViewModel{
-        return BaseViewModel()
-    }
+//    var viewModel: BaseViewModel{
+//        return BaseViewModel()
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //消除导航栏分割线
+        navigationController?.navigationBar.setBackgroundImage(UIImage().imageFromColor(color: UIColor.clear), for: UIBarPosition.any, barMetrics: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        
         setupSubViews()
-        bindViewModel()
+//        bindViewModel()
     }
-
 
     // MARK:- UI
     public func setupSubViews() -> Void {
     }
     
     // MARK:- 绑定viewModel
-    func bindViewModel() -> Void {
-    }
-
+//    func bindViewModel() -> Void {
+//    }
 }
 
 extension BaseViewController{
@@ -74,4 +77,21 @@ extension BaseViewController{
         
     }
     
+}
+
+extension BaseViewController {
+    func setUpNaviView() {
+        showBarButtonWithImageName(position: NavigationBar.NAV_LEFT, imageName: "dy_ic_navi_user")
+        showBarButtonWithImageName(position: NavigationBar.NAV_RIGHT, imageName: "dy_ic_navi_history")
+        
+        let searchView = NaviSearchView()
+        searchView.backgroundColor = KHexColor("EA8450")
+        searchView.layer.cornerRadius = 5
+        navigationItem.titleView = searchView
+        searchView.snp.makeConstraints { (make) in
+            make.center.equalTo((navigationItem.titleView?.snp.center)!)
+            make.width.equalTo(KAutoLayoutWidth(230))
+            make.height.equalTo(33)
+        }
+    }
 }

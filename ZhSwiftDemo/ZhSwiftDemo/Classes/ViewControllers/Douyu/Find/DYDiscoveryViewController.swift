@@ -1,19 +1,21 @@
 //
-//  FishBarViewController.swift
+//  DYDiscoveryViewController.swift
 //  ZhSwiftDemo
 //
-//  Created by Zhuang on 2018/9/10.
+//  Created by Zhuang on 2018/9/12.
 //  Copyright © 2018年 Zhuang. All rights reserved.
 //
 
 import UIKit
 
-class FishBarViewController: BaseViewController {
+class DYDiscoveryViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setUpNaviView()
+
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,14 +1,14 @@
 //
-//  RecommendViewController.swift
+//  DYJDQSViewController.swift
 //  ZhSwiftDemo
 //
-//  Created by Zhuang on 2018/9/10.
+//  Created by Zhuang on 2018/9/18.
 //  Copyright © 2018年 Zhuang. All rights reserved.
 //
 
 import UIKit
 
-class RecommendViewController: BaseViewController {
+class DYJDQSViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
