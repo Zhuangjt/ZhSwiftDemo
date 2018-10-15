@@ -7,7 +7,7 @@ target 'ZhSwiftDemo' do
 
   pod 'Alamofire'
   pod 'SwiftyJSON'
-  pod 'HandyJSON', '~> 4.1.1'
+  pod 'HandyJSON', '~> 4.2.0'
   pod 'Kingfisher'
   pod 'IBAnimatable'
   pod 'SwiftTheme'

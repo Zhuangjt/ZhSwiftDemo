@@ -12,11 +12,15 @@ class BaseCollectionViewCell: UICollectionViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.contentView.backgroundColor = UIColor.white
+
         setUpUI()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.contentView.backgroundColor = UIColor.white
+
         setUpUI()
     }
     
@@ -38,5 +42,10 @@ class BaseCollectionViewCell: UICollectionViewCell {
         let identifier = "BaseCollectionViewCell"
         cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
         return cell!
+    }
+    
+    //取cell identifier
+    public class func identifier() -> String{
+        return String(describing: self)
     }
 }

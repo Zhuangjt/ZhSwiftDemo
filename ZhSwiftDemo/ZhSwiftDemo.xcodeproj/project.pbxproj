@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		082D26822C451B61BB9F8E28 /* Pods_ZhSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAB33C52D216AB7531AF0F6 /* Pods_ZhSwiftDemo.framework */; };
+		12314CFD216EF80C002D0DDA /* DYModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12314CFC216EF80C002D0DDA /* DYModel.swift */; };
+		12314D02216F3B99002D0DDA /* DYClassifyCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12314D01216F3B99002D0DDA /* DYClassifyCollCell.swift */; };
 		1253294B21491BD200C4431F /* DYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253294A21491BD200C4431F /* DYHomeViewController.swift */; };
 		1253294D21491C5A00C4431F /* DYEnterTainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253294C21491C5A00C4431F /* DYEnterTainmentViewController.swift */; };
 		1253294F21491C6F00C4431F /* DYFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253294E21491C6F00C4431F /* DYFocusViewController.swift */; };
@@ -34,6 +36,7 @@
 		125F295F2150A9BB00AC6EA2 /* TYTabPagerBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 125F29532150A9BB00AC6EA2 /* TYTabPagerBarCell.m */; };
 		125F29602150A9BB00AC6EA2 /* TYPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 125F29552150A9BB00AC6EA2 /* TYPagerView.m */; };
 		125F29622150E15C00AC6EA2 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125F29612150E15C00AC6EA2 /* UIImage+Extension.swift */; };
+		12893CD8216C5C1D004F5B14 /* DYClassifyItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12893CD7216C5C1D004F5B14 /* DYClassifyItemCell.swift */; };
 		12B73A7F21510EBC009896A4 /* DYApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B73A7E21510EBC009896A4 /* DYApi.swift */; };
 		12BDC200214661D800DE2213 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDC1FF214661D800DE2213 /* BaseCollectionViewController.swift */; };
 		12BDC202214662FB00DE2213 /* BaseCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDC201214662FB00DE2213 /* BaseCollectionViewModel.swift */; };
@@ -85,6 +88,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12314CFC216EF80C002D0DDA /* DYModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYModel.swift; sourceTree = "<group>"; };
+		12314D01216F3B99002D0DDA /* DYClassifyCollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYClassifyCollCell.swift; sourceTree = "<group>"; };
 		1253294A21491BD200C4431F /* DYHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYHomeViewController.swift; sourceTree = "<group>"; };
 		1253294C21491C5A00C4431F /* DYEnterTainmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYEnterTainmentViewController.swift; sourceTree = "<group>"; };
 		1253294E21491C6F00C4431F /* DYFocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYFocusViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +124,7 @@
 		125F29572150A9BB00AC6EA2 /* TYPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYPagerController.h; sourceTree = "<group>"; };
 		125F29582150A9BB00AC6EA2 /* TYPagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYPagerView.h; sourceTree = "<group>"; };
 		125F29612150E15C00AC6EA2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		12893CD7216C5C1D004F5B14 /* DYClassifyItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYClassifyItemCell.swift; sourceTree = "<group>"; };
 		12B73A7E21510EBC009896A4 /* DYApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYApi.swift; sourceTree = "<group>"; };
 		12BDC1FF214661D800DE2213 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
 		12BDC201214662FB00DE2213 /* BaseCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewModel.swift; sourceTree = "<group>"; };
@@ -313,6 +319,7 @@
 			children = (
 				751F8F12212D135A00DD5C64 /* ZhNetWork.swift */,
 				12B73A7E21510EBC009896A4 /* DYApi.swift */,
+				12314CFC216EF80C002D0DDA /* DYModel.swift */,
 			);
 			path = ApiService;
 			sourceTree = "<group>";
@@ -496,6 +503,8 @@
 			isa = PBXGroup;
 			children = (
 				125CD4E12152516E00331A6A /* DYClassifyCell.swift */,
+				12314D01216F3B99002D0DDA /* DYClassifyCollCell.swift */,
+				12893CD7216C5C1D004F5B14 /* DYClassifyItemCell.swift */,
 				125CD4E32152567500331A6A /* DYClassifyHeaderView.swift */,
 			);
 			path = Cell;
@@ -728,6 +737,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12893CD8216C5C1D004F5B14 /* DYClassifyItemCell.swift in Sources */,
 				1253294B21491BD200C4431F /* DYHomeViewController.swift in Sources */,
 				75355EA921103AAC008DEFA9 /* ViewController.swift in Sources */,
 				125F29592150A9BB00AC6EA2 /* TYPagerController.m in Sources */,
@@ -757,6 +767,7 @@
 				752BF20A2112AB18005B03A6 /* MyNavigationController.swift in Sources */,
 				752F1E752111B89C002CA066 /* BaseTableViewController.swift in Sources */,
 				752BF20D2112B3BF005B03A6 /* HomeViewController.swift in Sources */,
+				12314CFD216EF80C002D0DDA /* DYModel.swift in Sources */,
 				752BF2102112B3F1005B03A6 /* VideoViewController.swift in Sources */,
 				125F295C2150A9BB00AC6EA2 /* TYTabPagerBarLayout.m in Sources */,
 				1253295121491C8400C4431F /* DYFishBarViewController.swift in Sources */,
@@ -778,6 +789,7 @@
 				125F29402150A2D200AC6EA2 /* DYJDQSViewController.swift in Sources */,
 				1253294F21491C6F00C4431F /* DYFocusViewController.swift in Sources */,
 				125F29382150A1F100AC6EA2 /* DYClassifyViewController.swift in Sources */,
+				12314D02216F3B99002D0DDA /* DYClassifyCollCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

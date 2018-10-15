@@ -31,7 +31,7 @@ class DYHomeViewController: BaseViewController {
     
     override func viewDidLayoutSubviews() {
         self.tabBar.frame = CGRect(x: 0, y: 0, width: KScreenWidth, height:40)
-        self.pagerController.view.frame = CGRect(x: 0, y: 40, width: KScreenWidth, height: KScreenHeight - KUINavigationBarHeight - KUITabBarHeight)
+        self.pagerController.view.frame = CGRect(x: 0, y: 40, width: KScreenWidth, height: KScreenHeight - KUIStatusBarHeight - KUINavigationBarHeight - KUITabBarHeight)
     }
     
     func addTabPagerBar() {
@@ -51,7 +51,7 @@ class DYHomeViewController: BaseViewController {
 //        tabbar.layout.progressVerEdging = 10
         tabbar.layout.adjustContentCellsCenter = true
         tabbar.layout.adjustContentCellsCenterInBar()
-        self.view.addSubview(tabbar)
+        view.addSubview(tabbar)
         self.tabBar = tabbar
     }
     
@@ -61,8 +61,8 @@ class DYHomeViewController: BaseViewController {
         pagerController.view.backgroundColor = UIColor.white
         pagerController.delegate = self
         pagerController.dataSource = self
-        self.addChildViewController(pagerController)
-        self.view .addSubview(pagerController.view)
+        addChildViewController(pagerController)
+        view.addSubview(pagerController.view)
         self.pagerController = pagerController
     }
     
@@ -101,7 +101,7 @@ extension DYHomeViewController : TYPagerControllerDataSource , TYPagerController
     
     func pagerController(_ pagerController: TYPagerController, controllerFor index: Int, prefetching: Bool) -> UIViewController {
         let vc = controllers[index]
-        vc.view.backgroundColor = UIColor(red: CGFloat(arc4random()%255)/255.0, green: CGFloat(arc4random()%255)/255.0, blue: CGFloat(arc4random()%255)/255.0, alpha: 1)
+//        vc.view.backgroundColor = UIColor(red: CGFloat(arc4random()%255)/255.0, green: CGFloat(arc4random()%255)/255.0, blue: CGFloat(arc4random()%255)/255.0, alpha: 1)
         return vc
     }
     

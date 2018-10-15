@@ -37,10 +37,9 @@ class BaseTableViewController: BaseViewController {
     override func setupSubViews() {
         super.setupSubViews()
         
-        let tableView = UITableView(frame: .zero, style: .plain)
+        let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.backgroundColor = UIColor.clear
         tableView.separatorStyle = .none
-        tableView.tableFooterView = UIView()
         //设置数据源
         tableView.dataSource = self
         //设置数据源
@@ -53,6 +52,13 @@ class BaseTableViewController: BaseViewController {
         
         tableView.snp.makeConstraints { (make) in
             make.edges.equalTo(0)
+        }
+        
+        if #available(iOS 11.0, *) {
+//            self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentBehavior.never
+            self.tableView.estimatedRowHeight = 0
+            self.tableView.estimatedSectionHeaderHeight = 0
+            self.tableView.estimatedSectionFooterHeight = 0
         }
     }
     

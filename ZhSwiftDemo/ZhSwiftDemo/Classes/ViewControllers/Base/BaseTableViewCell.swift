@@ -54,4 +54,10 @@ class BaseTableViewCell: UITableViewCell {
     class func getTableViewCellHeightWithModel<T>(entity: T) -> CGFloat{
         return UITableViewAutomaticDimension  //自适应单元格高度
     }
+    
+    
+    //取cell identifier
+    public class func identifier() -> String{
+        return String(describing: self)
+    }
 }

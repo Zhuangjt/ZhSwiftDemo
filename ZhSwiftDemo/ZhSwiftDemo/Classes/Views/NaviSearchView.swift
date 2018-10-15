@@ -37,9 +37,10 @@ class NaviSearchView: BaseView {
     
     
     override func setUpUI() {
-        self.addSubview(textField)
-        self.addSubview(searchIcon)
-        self.addSubview(qrcodeIcon)
+        
+        addSubview(textField)
+        addSubview(searchIcon)
+        addSubview(qrcodeIcon)
         
         textField.snp.makeConstraints { (make) in
             make.left.equalTo(self).offset((KAutoLayoutWidth(35)));

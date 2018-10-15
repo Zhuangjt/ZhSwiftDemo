@@ -14,7 +14,7 @@ let KScreenHeight = UIScreen.main.bounds.height
 let KScreenBounds = UIScreen.main.bounds
 //获取状态栏、标题栏、导航栏高度
 let KUIStatusBarHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
-let KUINavigationBarHeight: CGFloat =  KDEVICE_IPHONEX ? 88 : 44
+let KUINavigationBarHeight: CGFloat =  KDEVICE_IPHONEX ? 88 : 64
 let KUITabBarHeight: CGFloat = KDEVICE_IPHONEX ? 83 : 49
 //navigationBarHeight默认高度44 （iPhoneX 88）
 //tabBarHeight默认高度49     （iPhoneX 83）
@@ -164,6 +164,8 @@ let KCOLOR_TAB_TEXT = KHexColor("f55a5d")   //tab字体颜色
 let KCOLOR_TEXT_GRAY1 = KHexColor("DCD7D4") //浅灰字体
 let KCOLOR_TEXT_WHITE = UIColor.white       //白色字体
 let KCOLOR_TEXT_BLACK1 = KHexColor("262626") //黑色字体
+
+let KCOLOR_LINE_GRAY1  = KHexColor("E6E6E6") //分割线颜色
 
 
 //字体 字号

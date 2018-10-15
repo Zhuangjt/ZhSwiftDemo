@@ -21,7 +21,7 @@ class BaseView: UIView {
     }
 
     func setUpUI() {
-        
+        backgroundColor = UIColor.white
     }
     
 }

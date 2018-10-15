@@ -45,7 +45,7 @@ class BaseCollectionViewController: BaseViewController {
         let collectionView: UICollectionView!
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = cellSize
-        //列间距,行间距,偏移'
+        //列间距,行间距,偏移
         layout.minimumInteritemSpacing = minimumInteritemSpacing
         layout.minimumLineSpacing = minimumLineSpacing
         layout.sectionInset = edg

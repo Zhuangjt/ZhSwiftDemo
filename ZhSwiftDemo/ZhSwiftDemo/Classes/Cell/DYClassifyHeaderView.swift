@@ -11,12 +11,12 @@ import UIKit
 class DYClassifyHeaderView: BaseView {
 
     private lazy var label: UILabel = {
-       let label = UILabel.quickCreateLabel(text: "推荐分类", textColor: KCOLOR_TEXT_BLACK1, font: KFontSize(FONT_MIDDLE))
+       let label = UILabel.quickCreateLabel(text: "推荐分类", textColor: KCOLOR_TEXT_BLACK1, font: KFontSize(FONT_SAMLL))
        return label
     }()
     
     override func setUpUI() {
-        self.addSubview(label)
+        addSubview(label)
         label.snp.makeConstraints { (make) in
             make.left.equalTo(self).offset(KAutoLayoutWidth(12))
             make.centerY.equalTo(self)
