@@ -44,25 +44,24 @@ class BaseCollectionViewController: BaseViewController {
         
         let collectionView: UICollectionView!
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = cellSize
-        //列间距,行间距,偏移
-        layout.minimumInteritemSpacing = minimumInteritemSpacing
-        layout.minimumLineSpacing = minimumLineSpacing
-        layout.sectionInset = edg
-        
-        collectionView = UICollectionView.init(frame: self.view.bounds, collectionViewLayout: layout)
-        collectionView?.delegate = self
-        collectionView?.dataSource = self
+        layout.scrollDirection = .vertical
+        collectionView = UICollectionView.init(frame: .zero, collectionViewLayout: layout)
+        collectionView.delegate = self
+        collectionView.dataSource = self
         //注册cell
-        collectionView! .zh_registerCell(cell: UICollectionViewCell.self)
+        collectionView.zh_registerCell(cell: UICollectionViewCell.self)
         collectionView.backgroundColor = UIColor.clear
         self.collectionView = collectionView
         self.view.addSubview(self.collectionView)
-        
+        collectionView.snp.makeConstraints { (make) in
+            make.top.left.bottom.right.equalTo(0)
+        }
     }
 }
 
 extension BaseCollectionViewController:UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+    
+    //sections
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
 //        if viewModel.shouldMultiSecionts {
@@ -71,6 +70,7 @@ extension BaseCollectionViewController:UICollectionViewDataSource,UICollectionVi
 //        return 1
     }
     
+    //item
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 0
 //        if viewModel.shouldMultiSecionts {
@@ -79,6 +79,27 @@ extension BaseCollectionViewController:UICollectionViewDataSource,UICollectionVi
 //        return viewModel.dataScorce.count
     }
     
+    //size
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return cellSize
+    }
+    
+    //行间距
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return minimumLineSpacing
+    }
+    
+    //列间距
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return minimumInteritemSpacing
+    }
+    
+    //edg
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return edg
+    }
+    
+    //cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UICollectionViewCell", for: indexPath)
         return cell

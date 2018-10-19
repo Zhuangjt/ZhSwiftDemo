@@ -189,6 +189,7 @@ let FONT_BIG: CGFloat          = 22.5
 let FONT_MIDDLE: CGFloat       = 18.0
 let FONT_SAMLL: CGFloat        = 15.0
 let FONT_SUPER_SMALL: CGFloat  = 12.0
+let FONT_SUPER_SUPER_SMALL: CGFloat = 10.0
 
 
 //判断 iPhone 的屏幕尺寸

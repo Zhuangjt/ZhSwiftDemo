@@ -39,8 +39,6 @@ struct ZHNetwork {
             }
         }
     }
-    
-    
 }
 
 enum ZHService {

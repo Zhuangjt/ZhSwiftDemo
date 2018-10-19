@@ -10,6 +10,7 @@
 		082D26822C451B61BB9F8E28 /* Pods_ZhSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAB33C52D216AB7531AF0F6 /* Pods_ZhSwiftDemo.framework */; };
 		12314CFD216EF80C002D0DDA /* DYModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12314CFC216EF80C002D0DDA /* DYModel.swift */; };
 		12314D02216F3B99002D0DDA /* DYClassifyCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12314D01216F3B99002D0DDA /* DYClassifyCollCell.swift */; };
+		12416B9821787EF10055C65A /* DYAllListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12416B9721787EF10055C65A /* DYAllListCell.swift */; };
 		1253294B21491BD200C4431F /* DYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253294A21491BD200C4431F /* DYHomeViewController.swift */; };
 		1253294D21491C5A00C4431F /* DYEnterTainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253294C21491C5A00C4431F /* DYEnterTainmentViewController.swift */; };
 		1253294F21491C6F00C4431F /* DYFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253294E21491C6F00C4431F /* DYFocusViewController.swift */; };
@@ -42,6 +43,8 @@
 		12BDC202214662FB00DE2213 /* BaseCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BDC201214662FB00DE2213 /* BaseCollectionViewModel.swift */; };
 		12BDC20821467FA900DE2213 /* NEWSREADME in Resources */ = {isa = PBXBuildFile; fileRef = 12BDC20721467FA900DE2213 /* NEWSREADME */; };
 		12BDC2182146868E00DE2213 /* DYREADME in Resources */ = {isa = PBXBuildFile; fileRef = 12BDC2172146868E00DE2213 /* DYREADME */; };
+		12C510792174A55E000830C6 /* DYNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C510782174A55E000830C6 /* DYNetworkProvider.swift */; };
+		12CE914121757DE1001E700B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CE914021757DE1001E700B /* String+Extension.swift */; };
 		751F8F13212D135A00DD5C64 /* ZhNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751F8F12212D135A00DD5C64 /* ZhNetWork.swift */; };
 		7526C2B3211077B10009058D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526C2B2211077B10009058D /* BaseViewController.swift */; };
 		752BF2082112A0B1005B03A6 /* UIColor+WUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752BF2072112A0B1005B03A6 /* UIColor+WUIKit.swift */; };
@@ -90,6 +93,7 @@
 /* Begin PBXFileReference section */
 		12314CFC216EF80C002D0DDA /* DYModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYModel.swift; sourceTree = "<group>"; };
 		12314D01216F3B99002D0DDA /* DYClassifyCollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYClassifyCollCell.swift; sourceTree = "<group>"; };
+		12416B9721787EF10055C65A /* DYAllListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYAllListCell.swift; sourceTree = "<group>"; };
 		1253294A21491BD200C4431F /* DYHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYHomeViewController.swift; sourceTree = "<group>"; };
 		1253294C21491C5A00C4431F /* DYEnterTainmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYEnterTainmentViewController.swift; sourceTree = "<group>"; };
 		1253294E21491C6F00C4431F /* DYFocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYFocusViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 		12BDC201214662FB00DE2213 /* BaseCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewModel.swift; sourceTree = "<group>"; };
 		12BDC20721467FA900DE2213 /* NEWSREADME */ = {isa = PBXFileReference; lastKnownFileType = text; path = NEWSREADME; sourceTree = "<group>"; };
 		12BDC2172146868E00DE2213 /* DYREADME */ = {isa = PBXFileReference; lastKnownFileType = text; path = DYREADME; sourceTree = "<group>"; };
+		12C510782174A55E000830C6 /* DYNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYNetworkProvider.swift; sourceTree = "<group>"; };
+		12CE914021757DE1001E700B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		46CE5F082D0450C75721CD26 /* Pods-ZhSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhSwiftDemo/Pods-ZhSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		66B62B11AACB38919FB41426 /* Pods-ZhSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhSwiftDemo/Pods-ZhSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		751F8F12212D135A00DD5C64 /* ZhNetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhNetWork.swift; sourceTree = "<group>"; };
@@ -306,6 +312,13 @@
 			path = Find;
 			sourceTree = "<group>";
 		};
+		12CE914221758716001E700B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5AD2F012F0675D066712C718 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +333,7 @@
 				751F8F12212D135A00DD5C64 /* ZhNetWork.swift */,
 				12B73A7E21510EBC009896A4 /* DYApi.swift */,
 				12314CFC216EF80C002D0DDA /* DYModel.swift */,
+				12C510782174A55E000830C6 /* DYNetworkProvider.swift */,
 			);
 			path = ApiService;
 			sourceTree = "<group>";
@@ -333,6 +347,7 @@
 				75BBC734212A6BD0004DD642 /* Views */,
 				75BBC735212A6BDD004DD642 /* Cell */,
 				75BBC736212ABFF8004DD642 /* ViewModels */,
+				12CE914221758716001E700B /* Model */,
 				752F1E762111C341002CA066 /* ViewControllers */,
 				7526C2B421107CAF0009058D /* others */,
 			);
@@ -373,6 +388,7 @@
 				7571CB7A211D3FD6005C5805 /* UIScrollView+Extension.swift */,
 				125F29612150E15C00AC6EA2 /* UIImage+Extension.swift */,
 				125CD4DF2152385600331A6A /* UIView+Extension.swift */,
+				12CE914021757DE1001E700B /* String+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -506,6 +522,7 @@
 				12314D01216F3B99002D0DDA /* DYClassifyCollCell.swift */,
 				12893CD7216C5C1D004F5B14 /* DYClassifyItemCell.swift */,
 				125CD4E32152567500331A6A /* DYClassifyHeaderView.swift */,
+				12416B9721787EF10055C65A /* DYAllListCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -685,13 +702,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZhSwiftDemo/Pods-ZhSwiftDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BMPlayer/BMPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -707,13 +725,14 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -760,6 +779,7 @@
 				125F295E2150A9BB00AC6EA2 /* TYTabPagerController.m in Sources */,
 				125CD4E02152385600331A6A /* UIView+Extension.swift in Sources */,
 				752BF2192112B540005B03A6 /* HuoshanViewController.swift in Sources */,
+				12CE914121757DE1001E700B /* String+Extension.swift in Sources */,
 				125CD4DC2151F7BC00331A6A /* BaseView.swift in Sources */,
 				125F295B2150A9BB00AC6EA2 /* TYTabPagerBar.m in Sources */,
 				125F295D2150A9BB00AC6EA2 /* TYTabPagerView.m in Sources */,
@@ -775,6 +795,8 @@
 				752BF2082112A0B1005B03A6 /* UIColor+WUIKit.swift in Sources */,
 				7571CB7B211D3FD6005C5805 /* UIScrollView+Extension.swift in Sources */,
 				125F293A2150A22100AC6EA2 /* DYRecommendViewController.swift in Sources */,
+				12C510792174A55E000830C6 /* DYNetworkProvider.swift in Sources */,
+				12416B9821787EF10055C65A /* DYAllListCell.swift in Sources */,
 				125F29622150E15C00AC6EA2 /* UIImage+Extension.swift in Sources */,
 				1253295321491C9800C4431F /* DYDiscoveryViewController.swift in Sources */,
 				125F293E2150A27000AC6EA2 /* DYLOLViewController.swift in Sources */,

@@ -46,16 +46,14 @@ class BaseTableViewController: BaseViewController {
         tableView.delegate = self
         //注册
         tableView .zh_regisiterCell(cell: UITableViewCell.self)
-        
         view.addSubview(tableView)
         self.tableView = tableView
-        
         tableView.snp.makeConstraints { (make) in
             make.edges.equalTo(0)
         }
         
         if #available(iOS 11.0, *) {
-//            self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentBehavior.never
+            self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentBehavior.never
             self.tableView.estimatedRowHeight = 0
             self.tableView.estimatedSectionHeaderHeight = 0
             self.tableView.estimatedSectionFooterHeight = 0
@@ -66,20 +64,6 @@ class BaseTableViewController: BaseViewController {
 //
 //    }
 
-//    //刷新数据
-//    func reloadTableViewData() {
-//
-//    }
-//
-//    //下拉刷新
-//    func pullDownToRefresh() {
-//
-//    }
-//
-//    //上拉刷新
-//    func pullUpToRefresh() {
-//
-//    }
 }
 
 extension BaseTableViewController: UITableViewDataSource,UITableViewDelegate{
@@ -102,6 +86,7 @@ extension BaseTableViewController: UITableViewDataSource,UITableViewDelegate{
 //        return viewModel.dataSource.count
     }
     
+    //height
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return cellHeight
     }

@@ -11,6 +11,14 @@ import UIKit
 private let itemH : CGFloat = (KScreenWidth-3) / 4.0
 
 class DYClassifyCollCell: BaseCollectionViewCell {
+    
+    var data: [RecomCateList]?  {
+        didSet{
+            collectionView.reloadData()
+        }
+    }
+    
+    
     lazy var collectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 0.5
@@ -22,7 +30,7 @@ class DYClassifyCollCell: BaseCollectionViewCell {
         collectionView.zh_registerCell(cell: DYClassifyItemCell.self)
         collectionView.bounces = false
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.backgroundColor = KCOLOR_LINE_GRAY1
+        collectionView.backgroundColor = UIColor.white
         collectionView.delegate = self
         collectionView.dataSource = self
         return collectionView
@@ -38,11 +46,14 @@ class DYClassifyCollCell: BaseCollectionViewCell {
 
 extension DYClassifyCollCell : UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return data?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DYClassifyItemCell.identifier(), for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DYClassifyItemCell.identifier(), for: indexPath) as! DYClassifyItemCell
+        cell.backgroundColor = UIColor.red
+        let model: RecomCateList? = data?[indexPath.row]
+        cell.model = model
         return cell
     }
 }

@@ -11,23 +11,43 @@ import UIKit
 
 class DYClassifyItemCell: BaseCollectionViewCell {
     
-    lazy var contentImg : UIImageView = {
+    var model: RecomCateList? {
+        didSet{
+            labName.text = model?.cate2_name
+            contentImg.kf.setImage(with:URL.init(string: model?.square_icon_url ?? ""))
+        }
+    }
+    
+    lazy var contentImg: UIImageView = {
         let contentImg = UIImageView()
-        contentImg.backgroundColor = UIColor(red: CGFloat(arc4random()%255)/255.0, green: CGFloat(arc4random()%255)/255.0, blue: CGFloat(arc4random()%255)/255.0, alpha: 1)
         return contentImg
     }()
     
-    lazy var labName : UILabel = {
+    lazy var labName: UILabel = {
         let labName = UILabel.quickCreateLabel(text: "王者荣耀", textColor: KCOLOR_TEXT_BLACK1, font: KFontSize(FONT_SUPER_SMALL))
         labName.textAlignment = NSTextAlignment.center
         return labName
     }()
     
+    lazy var ivDiviceline1: UIImageView = {
+       let ivDiviceline1 = UIImageView()
+        ivDiviceline1.backgroundColor = KCOLOR_LINE_GRAY1
+        return ivDiviceline1
+    }()
+    
+    lazy var ivDiviceline2: UIImageView = {
+        let ivDiviceline2 = UIImageView()
+        ivDiviceline2.backgroundColor = KCOLOR_LINE_GRAY1;
+        return ivDiviceline2
+    }()
+    
     override func setUpUI() {
         super.setUpUI()
         
-        addSubview(contentImg);
+        addSubview(contentImg)
         addSubview(labName)
+        addSubview(ivDiviceline1)
+        addSubview(ivDiviceline2)
         
         contentImg.snp.makeConstraints { (make) in
             make.top.equalTo(KAutoLayoutWidth(14))
@@ -42,6 +62,15 @@ class DYClassifyItemCell: BaseCollectionViewCell {
             make.right.equalTo(-3)
         }
         
+        ivDiviceline1.snp.makeConstraints { (make) in
+            make.left.bottom.right.equalTo(0)
+            make.height.equalTo(0.5)
+        }
+        
+        ivDiviceline2.snp.makeConstraints { (make) in
+            make.top.right.bottom.equalTo(0)
+            make.width.equalTo(0.5)
+        }
+        
     }
 }
-
