@@ -74,4 +74,15 @@ extension UICollectionView{
     func zh_dequeueReusableCell<T: UICollectionViewCell>(cell: T.Type, indexPath: IndexPath) -> T {
         return dequeueReusableCell(withReuseIdentifier: String(describing: cell.self), for: indexPath) as! T
     }
+    
+    /// 注册头部
+    func zh_registerView<T: UICollectionReusableView>(kind: String, reusableView: T.Type){
+        register(reusableView, forSupplementaryViewOfKind: kind, withReuseIdentifier: String(describing: reusableView.self))
+    }
+    
+    /// 从缓冲池取已经存在的 reusableView
+    func zh_dequeueReusableView<T: UICollectionReusableView>(kind: String, indexPath: IndexPath, resusableView:T.Type) -> T{
+        return dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: String(describing: resusableView.self), for: indexPath) as! T
+    }
 }
+

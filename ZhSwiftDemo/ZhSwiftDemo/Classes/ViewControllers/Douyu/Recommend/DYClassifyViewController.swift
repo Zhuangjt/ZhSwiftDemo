@@ -130,7 +130,8 @@ extension DYClassifyViewController {
     
     //cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: DYClassifyCell.identifier(), for: indexPath) as! DYClassifyCell
+        let cell = tableView.zh_dequeueReusableCell(cell: DYClassifyCell.self, indexPath: indexPath)
+//        let cell = tableView.dequeueReusableCell(withIdentifier: DYClassifyCell.identifier(), for: indexPath) as! DYClassifyCell
         if indexPath.section == 0 {
             cell.data = self.cateRecomData
         }else{

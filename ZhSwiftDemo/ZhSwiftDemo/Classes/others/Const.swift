@@ -161,7 +161,9 @@ func KHexColor(_ HexString: String) ->UIColor {
 let KCOLOR_BAR_TINT = KHexColor("E1834C")   //nav背景色
 let KCOLOR_BAR_TEXT = KHexColor("925657")   //nav字体颜色
 let KCOLOR_TAB_TEXT = KHexColor("f55a5d")   //tab字体颜色
-let KCOLOR_TEXT_GRAY1 = KHexColor("DCD7D4") //浅灰字体
+let KCOLOR_BG_GRAY1 = KHexColor("F7F7F7")   //浅灰背景色
+
+let KCOLOR_TEXT_GRAY1 = KHexColor("DCD7D4") //浅灰字体1
 let KCOLOR_TEXT_WHITE = UIColor.white       //白色字体
 let KCOLOR_TEXT_BLACK1 = KHexColor("262626") //黑色字体
 

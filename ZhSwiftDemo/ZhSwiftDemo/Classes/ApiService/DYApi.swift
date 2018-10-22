@@ -12,6 +12,7 @@ enum DYApi {
     case recommendCategoryList  //分类推荐列表
     case liveCategoryList     //分类列表
     case liveAllList          //全部列表
+    case hotActitytyList      //热门活动
 }
 
 extension DYApi : TargetType {
@@ -27,6 +28,8 @@ extension DYApi : TargetType {
             return "/live/cate/getLiveCate1List"
         case .liveAllList:
             return "/gv2api/rkc/roomlist/0_0/0/20/ios"
+        case .hotActitytyList:
+            return "/Live/Subactivity/getActivityList"
         }
     }
     
@@ -37,6 +40,8 @@ extension DYApi : TargetType {
         case .liveCategoryList:
             return .get
         case .liveAllList:
+            return .get
+        case .hotActitytyList:
             return .get
         }
     }
@@ -53,6 +58,8 @@ extension DYApi : TargetType {
             return .requestParameters(parameters: ["client_sys":"ios"], encoding: URLEncoding.default)
         case .liveAllList:
             return .requestParameters(parameters: ["client_sys":"ios"], encoding: URLEncoding.default)
+        case .hotActitytyList:
+            return .requestParameters(parameters: ["client_sys":"ios","cid2":"0"], encoding: URLEncoding.default)
         }
     }
     

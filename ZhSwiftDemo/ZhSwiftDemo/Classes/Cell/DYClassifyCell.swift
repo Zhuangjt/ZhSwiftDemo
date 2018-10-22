@@ -102,7 +102,7 @@ extension DYClassifyCell : UICollectionViewDataSource,UICollectionViewDelegateFl
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: DYClassifyCollCell.self), for: indexPath) as! DYClassifyCollCell
+        let cell = collectionView.zh_dequeueReusableCell(cell: DYClassifyCollCell.self, indexPath: indexPath)
         let startIndex = indexPath.row * 8
         var endIndex = (indexPath.row + 1) * 8 - 1
         if endIndex > data!.count - 1 {

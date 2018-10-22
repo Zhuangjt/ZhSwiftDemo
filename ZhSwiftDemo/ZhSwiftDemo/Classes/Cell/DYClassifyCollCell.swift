@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let itemH : CGFloat = (KScreenWidth-3) / 4.0
+private let itemH : CGFloat = KScreenWidth / 4.0
 
 class DYClassifyCollCell: BaseCollectionViewCell {
     
@@ -21,9 +21,9 @@ class DYClassifyCollCell: BaseCollectionViewCell {
     
     lazy var collectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.minimumLineSpacing = 0.5
-        layout.minimumInteritemSpacing = 0.5
-        layout.sectionInset = UIEdgeInsetsMake(0.5, 0, 0.5, 0)
+        layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = 0
+        layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0)
         layout.itemSize = CGSize(width: itemH, height: itemH)
         
         let collectionView = UICollectionView.init(frame: self.bounds, collectionViewLayout: layout)
@@ -50,7 +50,7 @@ extension DYClassifyCollCell : UICollectionViewDataSource,UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DYClassifyItemCell.identifier(), for: indexPath) as! DYClassifyItemCell
+        let cell = collectionView.zh_dequeueReusableCell(cell: DYClassifyItemCell.self, indexPath: indexPath)
         cell.backgroundColor = UIColor.red
         let model: RecomCateList? = data?[indexPath.row]
         cell.model = model

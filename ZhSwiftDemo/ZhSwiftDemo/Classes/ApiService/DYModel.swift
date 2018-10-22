@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-/// 首页--分类
+/// 推荐--分类
 class CateAllData: Mappable {
     var cate1_list: [CateOneList] = [CateOneList]()
     
@@ -76,7 +76,7 @@ class CateRecomData: Mappable {
     }
 }
 
-/// 首页--全部
+/// 推荐--全部
 
 class HomeAllData: Mappable {
     var roomRule: Int?
@@ -116,3 +116,33 @@ class HomeAllList: Mappable {
     }
 }
 
+///推荐--热门活动
+class HotAcData: Mappable {
+    var total: Int?
+    var list: [HotAcList] = [HotAcList]()
+    
+    required init?(map: Map) {
+    }
+    
+    func mapping(map: Map) {
+        total <- map["total"]
+        list <- map["list"]
+
+    }
+}
+
+class HotAcList: Mappable {
+    var id: Int?
+    var act_name: String?
+    var act_info: String?
+    
+    required init?(map: Map) {
+    }
+    
+    func mapping(map: Map) {
+        id <- map["id"]
+        act_name <- map["act_name"]
+        act_info <- map["act_info"]
+
+    }
+}

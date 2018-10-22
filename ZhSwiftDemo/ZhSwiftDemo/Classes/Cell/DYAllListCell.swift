@@ -8,10 +8,11 @@
 
 import UIKit
 
-private let cellH: CGFloat = (KScreenWidth - 10)/2.0 * 0.65
+private let cellH: CGFloat = ((KScreenWidth - 10)/2.0) * 0.65
 
 class DYAllListCell: BaseCollectionViewCell {
     
+    /// 推荐-全部
     var model: HomeAllList? {
         didSet{
             contentImg.kf.setImage(with: URL.init(string: model?.room_src ?? ""))
@@ -31,7 +32,7 @@ class DYAllListCell: BaseCollectionViewCell {
     
     lazy var contentImg: UIImageView = {
         let contentImg = UIImageView()
-//        contentImg.backgroundColor = UIColor(red: CGFloat(arc4random()%255)/255.0, green: CGFloat(arc4random()%255)/255.0, blue: CGFloat(arc4random()%255)/255.0, alpha: 1)
+        contentImg.backgroundColor = UIColor(red: CGFloat(arc4random()%255)/255.0, green: CGFloat(arc4random()%255)/255.0, blue: CGFloat(arc4random()%255)/255.0, alpha: 1)
         return contentImg
     }()
     

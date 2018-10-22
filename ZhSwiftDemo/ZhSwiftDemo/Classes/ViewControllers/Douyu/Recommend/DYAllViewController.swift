@@ -9,7 +9,7 @@
 import UIKit
 
 private let cellW: CGFloat = (KScreenWidth - 10)/2.0
-private let cellH: CGFloat = (KScreenWidth - 10)/2.0 * 0.65 + KAutoLayoutWidth(42)
+private let cellH: CGFloat = ((KScreenWidth - 10)/2.0) * 0.65 + KAutoLayoutWidth(42)
 
 class DYAllViewController: BaseCollectionViewController {
 
@@ -63,7 +63,7 @@ extension DYAllViewController{
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DYAllListCell.identifier(), for: indexPath) as! DYAllListCell
+        let cell = collectionView.zh_dequeueReusableCell(cell: DYAllListCell.self, indexPath: indexPath)
         let model: HomeAllList? = self.data[indexPath.row]
         cell.model = model
         return cell
