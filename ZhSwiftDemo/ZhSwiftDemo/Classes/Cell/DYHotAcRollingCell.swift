@@ -9,6 +9,14 @@
 import UIKit
 
 class DYHotAcRollingCell: BaseCollectionViewCell {
+    var data: [HotAcList]? {
+        didSet{
+            if data?.count ?? 0 > 0 {
+                rollingNoticeView.reloadDataAndStartRoll()
+            }
+        }
+    }
+    
     lazy var ivGrayBg: UIView = {
         let ivGrayBg = UIView()
         ivGrayBg.backgroundColor = KCOLOR_BG_GRAY1
@@ -41,17 +49,18 @@ class DYHotAcRollingCell: BaseCollectionViewCell {
             make.right.equalTo(-5)
         }
         
-        rollingNoticeView.reloadDataAndStartRoll()
     }
 }
 
 extension DYHotAcRollingCell: GYRollingNoticeViewDelegate,GYRollingNoticeViewDataSource{
     func numberOfRowsFor(roolingView: GYRollingNoticeView) -> Int {
-        return 10
+        return data?.count ?? 0
     }
     
     func rollingNoticeView(roolingView: GYRollingNoticeView, cellAtIndex index: Int) -> GYNoticeViewCell {
         let cell = roolingView.dequeueReusableCell(withIdentifier: "DYHotRollingCell") as! DYHotRollingCell
+        let model: HotAcList? = self.data?[index]
+        cell.model = model
         return cell
     }
     

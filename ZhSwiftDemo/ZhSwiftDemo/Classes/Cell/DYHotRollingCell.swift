@@ -9,6 +9,14 @@
 import UIKit
 
 class DYHotRollingCell: GYNoticeViewCell {
+    var model: HotAcList? {
+        didSet{
+            labTitle.text = model?.act_name
+            labSub.text = model?.act_info
+            
+        }
+    }
+    
     lazy var icHot: UIImageView = {
         let ivHot = UIImageView.init(image: KImageName("dy_ic_ac_hot"))
         return ivHot

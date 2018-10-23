@@ -547,9 +547,9 @@
 				12893CD7216C5C1D004F5B14 /* DYClassifyItemCell.swift */,
 				125CD4E32152567500331A6A /* DYClassifyHeaderView.swift */,
 				12416B9721787EF10055C65A /* DYAllListCell.swift */,
-				12E88BF0217DD0E8007BE2F2 /* DYGameCollCell.swift */,
 				12E88BE6217D76DB007BE2F2 /* DYGameCollHeaderView.swift */,
 				12E88BEE217DC88F007BE2F2 /* DYRecomHeaderView.swift */,
+				12E88BF0217DD0E8007BE2F2 /* DYGameCollCell.swift */,
 				12E88BEA217D7FBC007BE2F2 /* DYHotAcRollingCell.swift */,
 				12E88BEC217DA47B007BE2F2 /* DYHotRollingCell.swift */,
 			);

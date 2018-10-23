@@ -12,6 +12,12 @@ private let cellW: CGFloat = (KScreenWidth - 20)/4.0
 
 class DYGameCollHeaderView: UICollectionReusableView {
     
+    var cateRecomData: [RecomCateList]?{
+        didSet{
+            collectionView.reloadData()
+        }
+    }
+    
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 0
@@ -55,11 +61,13 @@ extension DYGameCollHeaderView: UICollectionViewDelegateFlowLayout,UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return (self.cateRecomData?.count ?? 0) > 8 ? 8 : (self.cateRecomData?.count ?? 0)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.zh_dequeueReusableCell(cell: DYGameCollCell.self, indexPath: indexPath)
+        let model: RecomCateList? = self.cateRecomData?[indexPath.row]
+        cell.model = model
         return cell
     }
 }

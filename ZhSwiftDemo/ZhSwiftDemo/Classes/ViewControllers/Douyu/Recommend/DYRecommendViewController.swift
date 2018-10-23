@@ -54,10 +54,10 @@ class DYRecommendViewController: BaseCollectionViewController {
                 //字典转模型
                 let cateRecomData: CateRecomData = CateRecomData(JSON: jsonDict)!
                 self?.cateRecomData = cateRecomData.cate2_list
+                workingGroup.leave()
             }, failClosure: {_ in
-                
+                workingGroup.leave()
             })
-            workingGroup.leave()
         }
         
         workingGroup.enter()
@@ -68,11 +68,10 @@ class DYRecommendViewController: BaseCollectionViewController {
                 }
                 let hotAcData: HotAcData = HotAcData(JSON: jsonDic)!
                 self?.hotAcList = hotAcData.list
+                workingGroup.leave()
             }, failClosure: {_ in
-                
+                workingGroup.leave()
             })
-            
-            workingGroup.leave()
         }
         
         workingGroup.enter()
@@ -83,14 +82,13 @@ class DYRecommendViewController: BaseCollectionViewController {
                 }
                 let allData: HomeAllData = HomeAllData(JSON: jsonDic)!
                 self?.allList = allData.list
-                
+                workingGroup.leave()
             }, failClosure: {_ in
-                
+                workingGroup.leave()
             })
-            workingGroup.leave()
         }
         
-        workingGroup.notify(queue: workingQueue) {
+        workingGroup.notify(queue: DispatchQueue.main) {
             //所有接口结束
             self.collectionView.reloadData()
             self.collectionView.es.stopPullToRefresh()
@@ -105,7 +103,7 @@ extension DYRecommendViewController{
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return section == 0 ? 1 : 10
+        return section == 0 ? 1 : self.allList.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -125,6 +123,7 @@ extension DYRecommendViewController{
         if kind == UICollectionElementKindSectionHeader {
             if indexPath.section == 0 {
                 let firstHeaderView: DYGameCollHeaderView = collectionView.zh_dequeueReusableView(kind: UICollectionElementKindSectionHeader, indexPath: indexPath, resusableView: DYGameCollHeaderView.self)
+                firstHeaderView.cateRecomData = self.cateRecomData
                 reusableView = firstHeaderView
             }else{
                 let secondHeaderView: DYRecomHeaderView = collectionView.zh_dequeueReusableView(kind: UICollectionElementKindSectionHeader, indexPath: indexPath, resusableView: DYRecomHeaderView.self)
@@ -141,9 +140,12 @@ extension DYRecommendViewController{
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.section == 0 {
             let cell = collectionView.zh_dequeueReusableCell(cell: DYHotAcRollingCell.self, indexPath: indexPath)
+            cell.data = self.hotAcList
             return cell
         }else{
             let cell = collectionView.zh_dequeueReusableCell(cell: DYAllListCell.self, indexPath: indexPath)
+            let model: HomeAllList = self.allList[indexPath.row]
+            cell.model = model
             return cell
         }
     }

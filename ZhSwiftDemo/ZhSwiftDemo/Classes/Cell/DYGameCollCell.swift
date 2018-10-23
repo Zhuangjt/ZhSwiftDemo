@@ -9,9 +9,16 @@
 import UIKit
 
 class DYGameCollCell: BaseCollectionViewCell {
+    
+    var model: RecomCateList?{
+        didSet{
+            contentImg.kf.setImage(with: URL.init(string: model?.square_icon_url ?? ""))
+            labName.text = model?.cate2_name
+        }
+    }
+    
     lazy var contentImg: UIImageView = {
         let contentImg = UIImageView()
-        contentImg.backgroundColor = UIColor(red: CGFloat(arc4random()%255)/255.0, green: CGFloat(arc4random()%255)/255.0, blue: CGFloat(arc4random()%255)/255.0, alpha: 1)
         return contentImg
     }()
     
