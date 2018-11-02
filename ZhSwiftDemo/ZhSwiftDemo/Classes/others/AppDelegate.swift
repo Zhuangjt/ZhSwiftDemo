@@ -35,6 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font:KFontSize(10.0),NSAttributedStringKey.foregroundColor:UIColor.black], for: .normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font:KFontSize(10.0),NSAttributedStringKey.foregroundColor:KCOLOR_TAB_TEXT], for: .selected)
         
+        
+        
         return true
     }
 
