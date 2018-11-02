@@ -68,4 +68,9 @@ extension DYAllViewController{
         cell.model = model
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let lolViewCrl = DYLOLViewController()
+        self.navigationController?.pushViewController(lolViewCrl, animated: true)
+    }
 }

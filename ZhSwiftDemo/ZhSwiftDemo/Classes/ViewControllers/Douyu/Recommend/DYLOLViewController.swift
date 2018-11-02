@@ -14,6 +14,7 @@ class DYLOLViewController: BaseCollectionViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.title = "标题"
     }
 
     override func didReceiveMemoryWarning() {

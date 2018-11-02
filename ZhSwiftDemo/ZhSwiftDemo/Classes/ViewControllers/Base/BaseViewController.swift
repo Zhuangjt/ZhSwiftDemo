@@ -23,6 +23,7 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        self.view.backgroundColor = UIColor.white
         //消除导航栏分割线
         navigationController?.navigationBar.setBackgroundImage(UIImage().imageFromColor(color: UIColor.clear), for: UIBarPosition.any, barMetrics: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
